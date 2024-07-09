@@ -1,0 +1,35 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Example API",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/example": {
+        "post": {
+          "summary": "Example endpoint",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful operation"
+            }
+          }
+        }
+      }
+    }
+  }
+  
